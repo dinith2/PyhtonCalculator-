@@ -30,5 +30,5 @@ elif operator == "4":
     print(result)
 
 else:
-    print("invalid"):
+    print("invalid")
 
