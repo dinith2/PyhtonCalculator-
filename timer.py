@@ -1,15 +1,25 @@
 import time
 
-
-def countdown(t):
-    while t:  
-      mins = t // 60
+def pomodoro(): 
+  print("Pomodoro starts now!")
+  for i in range(4):
+    t = 25*60
+    while t: 
+      mins = t // 60 
       secs = t % 60
-      timer = '{:02d}:{:02d}'.format(mins, secs)
-      print(timer, end="\r")  
-      time.sleep(1)
-      t -= 1
-    print('starting')
-t = input("Enter the time in seconds: ") 
+      timer = '{:02d}:{:02d}'.format(mins, secs) 
+      print(timer, end="\r") 
+      t -= 1 
+    print("stop")
 
-countdown(int(t))
+    t = 5*60 
+    while t: 
+      mins = t // 60 
+      secs = t % 60
+      timer = '{:02d}:{:02d}'.format(mins, secs) 
+      print(timer, end="\r") 
+      time.sleep(1)
+      t -= 1 
+    print("start")
+
+pomodoro()
