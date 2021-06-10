@@ -1,4 +1,4 @@
-
+import numpy
 
 print("select operation")
 print("1. Add")
