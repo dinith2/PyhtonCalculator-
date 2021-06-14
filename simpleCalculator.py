@@ -6,7 +6,7 @@ print("2.subtract")
 print("3.multiply")
 print("4.divide")
 print("5.exit")
-print("6.say a joke")
+
 operator = input()
 #adding
 if operator == "1":
