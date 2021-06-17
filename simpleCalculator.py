@@ -16,7 +16,7 @@ if operator == "1":
     result = float(num1) + float(num2)
     print(result)
 #subrating 
-elif operator == "2":
+elif operator == "2" or "add":
     num1 = input("enter number : ")
     num2 = input ("enter another number: ")
     result = float(num1) - float(num2)
