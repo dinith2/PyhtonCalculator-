@@ -5,7 +5,7 @@ print("1. Add")
 print("2.subtract")
 print("3.multiply")
 print("4.divide")
-print("5.trig function")
+print("5.trig function"):
 print("6.exit"):
 
 operator = input()
