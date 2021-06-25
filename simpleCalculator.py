@@ -1,12 +1,14 @@
 import numpy
+import math 
 
 print("select operation")
 print("1. Add")
 print("2.subtract")
-print("3.multiply"):
-print("4.divide"):
-print("5.trig function"):
-print("6.exit"):
+print("3.multiply")
+print("4.divide")
+print("5.trig function")
+print("test")
+print("6.exit")
 
 operator = input()
 #adding
@@ -38,7 +40,7 @@ else:
     print("invalid")
 
 def main():
-    import math 
+    
     trig = input('calculate sin cosine or tan')
     if trig =='sin' or trig == 'sin':
         a = eval(input('what is the angle measure'))
