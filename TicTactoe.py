@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-#graphic
-=======
-#graphic1
->>>>>>> 942ebcfe13e88d342a57915b9b79eefb56d865d8
 def display_board(board):
     blankBoard="""
 ___________________
