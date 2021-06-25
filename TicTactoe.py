@@ -1,4 +1,4 @@
-#graphic
+
 def display_board(board):
     blankBoard="""
 ___________________
