@@ -77,6 +77,7 @@ def replay():
     if playAgain.lower() == 'y':
         return True
     if playAgain.lower() == 'n':
+        print("thank you for playing!")
         return False
 
 if __name__ == "__main__":
