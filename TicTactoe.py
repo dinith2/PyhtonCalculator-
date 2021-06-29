@@ -115,3 +115,7 @@ if __name__ == "__main__":
             players=player_input()
             # Empty board init
             board = ['#'] * 10
+
+
+            #computervsman
+        
