@@ -10,7 +10,7 @@ def menu():
     while option != 0:
         if option == 1:
             print('Welcome to Tic Tac Toe!')
-            i = 1
+            i = 1  
             hvh_main()
             # Choose your side
         elif option == 2:
@@ -122,6 +122,7 @@ def  hvh_main():
             position = player_choice(board)
             # Who's playin ?
             i = 1 
+            i = 2
             if i % 2 == 0:
                 marker = players[1]
             else:
