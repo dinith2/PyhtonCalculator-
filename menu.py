@@ -111,7 +111,9 @@ def replay():
 
 
 def  hvh_main():
+    i = 1 
     players=player_input()
+    
     # Empty board init
     board = ['#'] * 10
     while True:
@@ -120,12 +122,12 @@ def  hvh_main():
         while not game_on:
             # Player to choose where to put the mark
             position = player_choice(board)
-            # Who's playin ?
-            i = 1 
-            i = 2
+            # Who's playin 
             if i % 2 == 0:
+                
                 marker = players[1]
             else:
+                
                 marker = players[0]
             # Play !
             place_marker(board, marker, int(position))
@@ -136,6 +138,7 @@ def  hvh_main():
                 print("You won !")
                 break
             game_on=full_board_check(board)
+            
         if not replay():
             break
         else:
