@@ -139,6 +139,7 @@ def  hvh_main():
             i += 1
             if win_check(board, marker):
                 print("You won !")
+                menu()
                 break
             game_on=full_board_check(board)
             
@@ -250,6 +251,7 @@ def main():
             playerMove()
             printBoard(board)
         else:
+            menu()
             print('Sorry, O\'s won this time!')
             break
 
@@ -257,11 +259,14 @@ def main():
             move = compMove()
             if move == 0:
                 print('Tie Game!')
+                menu()
             else:
+                menu()
                 insertLetter('O', move)
                 print('Computer placed an \'O\' in position', move , ':')
                 printBoard(board)
         else:
+            menu()
             print('X\'s won this time! Good Job!')
             break
 
@@ -277,6 +282,7 @@ def hvc_main():
             print('-----------------------------------')
             main()
         else:
+            menu()
             break    
 
 
