@@ -16,6 +16,9 @@ def menu():
         elif option == 2:
             hvc_main()
             pass 
+        elif option == 0:
+            exit_main()
+            pass 
         else:
             print("invalid")
 
@@ -274,7 +277,12 @@ def hvc_main():
             print('-----------------------------------')
             main()
         else:
-            break        
+            break    
+
+
+def exit_main():    
+    quit()
+
 menu()
 
 
