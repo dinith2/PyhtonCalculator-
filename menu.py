@@ -1,3 +1,4 @@
+import  sys 
 def menu():
     print(" 1.man vs man")
     print("2.man vs computer")
@@ -95,13 +96,7 @@ def player_choice(board):
         choice = input("This space isn't free. Please choose between 1 and 9 : ")
     return choice
 
-def replay():
-    playAgain = input("Do you want to play again (y/n) ? ")
-    if playAgain.lower() == 'y':
-        return True
-    if playAgain.lower() == 'n':
-        print("thank you for playing!")
-        return False
+
 
 
 
@@ -143,15 +138,7 @@ def  hvh_main():
                 break
             game_on=full_board_check(board)
             
-        if not replay():
-            break
-        else:
-            i = 1
-            # Choose your side
-            players=player_input()
-            # Empty board init
-            board = ['#'] * 10
-            pass 
+        
 board = [' ' for x in range(10)]
 
 def insertLetter(letter, pos):
@@ -287,7 +274,7 @@ def hvc_main():
 
 
 def exit_main():    
-    quit()
+    sys.exit()
 
 menu()
 
