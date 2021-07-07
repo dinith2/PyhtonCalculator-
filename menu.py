@@ -22,6 +22,7 @@ def menu():
             pass 
         else:
             print("invalid")
+            menu()
 
 def display_board(board):
     blankBoard="""
@@ -238,7 +239,7 @@ def main():
             playerMove()
             printBoard(board)
         else:
-            menu()
+            
             print('Sorry, O\'s won this time!')
             break
 
@@ -246,14 +247,14 @@ def main():
             move = compMove()
             if move == 0:
                 print('Tie Game!')
-                menu()
+                
             else:
-                menu()
+                
                 insertLetter('O', move)
                 print('Computer placed an \'O\' in position', move , ':')
                 printBoard(board)
         else:
-            menu()
+            
             print('X\'s won this time! Good Job!')
             break
 
