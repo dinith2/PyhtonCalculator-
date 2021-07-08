@@ -2,13 +2,14 @@ import  sys
 def menu():
     print(" 1.man vs man")
     print("2.man vs computer")
-    print("0.exit")
+    print("3.exit")
 
 
   
     option = int(input("enter your option"))
 
     while option != 0:
+        print("select option")
         if option == 1:
             print('Welcome to Tic Tac Toe!')
             i = 1  
@@ -17,7 +18,7 @@ def menu():
         elif option == 2:
             hvc_main()
             pass 
-        elif option == 0:
+        elif option == 3:
             exit_main()
             pass 
         else:
@@ -274,8 +275,21 @@ def hvc_main():
             break    
 
 
-def exit_main():    
-    sys.exit()
+def exit_main(): 
+    while True: 
+        Answer = input("are you sure you want to quit? yes or no")
+        if Answer == 'yes':
+            sys.exit()
+        elif Answer == 'no':
+            menu()
+            pass
+        else: 
+            menu()
+            break 
+
+        
+   
+
 
 menu()
 
