@@ -284,7 +284,8 @@ def exit_main():
             menu()
             pass
         else: 
-            menu()
+            print("invalid")
+            exit_main()
             break 
 
         
