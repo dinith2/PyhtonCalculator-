@@ -240,7 +240,6 @@ def main():
             playerMove()
             printBoard(board)
         else:
-            
             print('Sorry, O\'s won this time!')
             break
 
@@ -248,20 +247,16 @@ def main():
             move = compMove()
             if move == 0:
                 print('Tie Game!')
-                
             else:
-                
                 insertLetter('O', move)
                 print('Computer placed an \'O\' in position', move , ':')
                 printBoard(board)
         else:
-            
             print('X\'s won this time! Good Job!')
             break
 
     if isBoardFull(board):
         print('Tie Game!')
-
 
 def hvc_main():
     while True:
