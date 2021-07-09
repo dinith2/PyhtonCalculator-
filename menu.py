@@ -241,6 +241,7 @@ def main():
             printBoard(board)
         else:
             print('Sorry, O\'s won this time!')
+            menu()
             break
 
         if not(isWinner(board, 'X')):
@@ -253,10 +254,12 @@ def main():
                 printBoard(board)
         else:
             print('X\'s won this time! Good Job!')
+            menu()
             break
 
     if isBoardFull(board):
         print('Tie Game!')
+
 
 def hvc_main():
     while True:
@@ -267,7 +270,7 @@ def hvc_main():
             main()
         else:
             menu()
-            break    
+            break
 
 
 def exit_main(): 
