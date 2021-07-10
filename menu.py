@@ -267,7 +267,7 @@ def hvc_main():
         if answer.lower() == 'y' or answer.lower == 'yes':
             board = [' ' for x in range(10)]
             print('-----------------------------------')
-            main()
+            menu()
         else:
             menu()
             break
