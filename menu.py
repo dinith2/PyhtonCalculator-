@@ -252,6 +252,7 @@ def main():
                 insertLetter('O', move)
                 print('Computer placed an \'O\' in position', move , ':')
                 printBoard(board)
+                menu()
         else:
             print('X\'s won this time! Good Job!')
             menu()
