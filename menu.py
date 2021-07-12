@@ -248,6 +248,7 @@ def main():
             move = compMove()
             if move == 0:
                 print('Tie Game!')
+                menu()
             else:
                 insertLetter('O', move)
                 print('Computer placed an \'O\' in position', move , ':')
