@@ -2,6 +2,8 @@
 
 def menu():
     print("1.sort numbers ")
+    print("2.find the avg ")
+    print("")
     
 
     option = int(input("enter your option"))
@@ -9,7 +11,7 @@ def menu():
     while option != 0:
         print("select option")
         if option == 1:
-           dtin_main()
+           sort_main()
             # Choose your side
         elif option == 2:
             print("hi")
@@ -21,16 +23,15 @@ def menu():
             print("invalid")
             menu()
 
-def dtin_main():
+def sort_main():
      while True:
-        print("2.decreasing to increasing")
-        Answer = input("enter your option ")
-        if Answer == '2':
+        Answer = input("1. decrease  2. increase ")
+        if Answer == '1':
             my_list = [5, 3, 1, 2, 4, 7, 6]
             #sort in decreasing order
             my_list = sorted(my_list, reverse=True) 
             print(my_list)   
-        elif Answer == '1':
+        elif Answer == '2':
             my_list = [5, 3, 1, 2, 4, 7, 6]
             # sort in increasing order
             my_list = sorted(my_list, reverse=False) 
