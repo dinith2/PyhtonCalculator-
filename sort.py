@@ -3,7 +3,6 @@
 def menu():
     print("1.sort numbers ")
     print("2.find the avg ")
-    print("")
     
 
     option = int(input("enter your option"))
@@ -27,7 +26,9 @@ def sort_main():
      while True:
         Answer = input("1. decrease  2. increase ")
         if Answer == '1':
-            my_list = [5, 3, 1, 2, 4, 7, 6]
+            [num1, num2, num3, num4, num5, num6, num7] = input("enter 6 numbers").split()
+            my_list = [num1, num2, num3, num4, num5, num6, num7]
+            
             #sort in decreasing order
             my_list = sorted(my_list, reverse=True) 
             print(my_list)   
