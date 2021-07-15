@@ -39,7 +39,12 @@ def sort_main():
             my_list = sorted(my_list, reverse=True) 
             print(my_list)   
         elif Answer == '2':
-            my_list = [5, 3, 1, 2, 4, 7, 6]
+            try:
+                num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
+                my_list=[num1, num2, num3, num4, num5, num6, num7]
+            except:
+                print("invalid, only print numbers")
+                sort_main()
             # sort in increasing order
             my_list = sorted(my_list, reverse=False) 
             print(my_list)
@@ -48,6 +53,9 @@ def sort_main():
             print("invalid")
 
             break 
+
+def avg_main(): 
+
 
     
 
