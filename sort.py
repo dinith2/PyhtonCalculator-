@@ -26,8 +26,14 @@ def sort_main():
      while True:
         Answer = input("1. decrease  2. increase ")
         if Answer == '1':
-            num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
-            my_list = [num1, num2, num3, num4, num5, num6, num7]
+
+            try:
+                num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
+                my_list = [num1, num2, num3, num4, num5, num6, num7]
+            except: 
+                print("invalid")
+                sort_main()
+            
             
             #sort in decreasing order
             my_list = sorted(my_list, reverse=True) 
