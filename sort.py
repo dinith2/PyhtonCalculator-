@@ -31,7 +31,7 @@ def sort_main():
                 num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
                 my_list = [num1, num2, num3, num4, num5, num6, num7]
             except: 
-                print("invalid")
+                print("invalid, only print numbers ")
                 sort_main()
             
             
