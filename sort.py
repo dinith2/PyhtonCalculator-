@@ -33,11 +33,11 @@ def sort_main():
             except: 
                 print("invalid, only print numbers ")
                 sort_main()
+                #sort in decreasing order
+                my_list = sorted(my_list, reverse=True) 
+                print(my_list)
             
-            
-            #sort in decreasing order
-            my_list = sorted(my_list, reverse=True) 
-            print(my_list)   
+               
         elif Answer == '2':
             try:
                 num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
@@ -45,9 +45,10 @@ def sort_main():
             except:
                 print("invalid, only print numbers")
                 sort_main()
-            # sort in increasing order
-            my_list = sorted(my_list, reverse=False) 
-            print(my_list)
+                # sort in increasing order
+                my_list = sorted(my_list, reverse=False) 
+                print(my_list)
+            
             pass
         else: 
             print("invalid")
@@ -55,7 +56,8 @@ def sort_main():
             break 
 
 def avg_main(): 
-
+    while True: 
+        answer = 
 
     
 
