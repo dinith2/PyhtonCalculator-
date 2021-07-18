@@ -52,6 +52,7 @@ def sort_main():
             pass
         else: 
             print("invalid")
+            sort_main()
 
             break 
 
