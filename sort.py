@@ -53,6 +53,7 @@ def sort_main():
         else: 
             print("invalid")
             sort_main()
+            print("go back to menu")
 
             break 
 
