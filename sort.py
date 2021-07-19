@@ -59,7 +59,14 @@ def sort_main():
 
 def avg_main(): 
     while True: 
-        answer = 
+        answer = input("1.find the averge 2. find the median")
+        if answer == '1':
+            num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers ")
+            try 
+            number = [60,50,40,60,70] 
+            avg = sum(number)/len(number)
+            print(avg)
+
 
     
 
