@@ -1,8 +1,9 @@
-
+import sys
 
 def menu():
     print("1.sort numbers ")
-    print("2.find the avg ")
+    print("2.find the avg and median ")
+    print("3.exit")
     
 
     option = int(input("enter your option"))
@@ -13,7 +14,7 @@ def menu():
            sort_main()
             # Choose your side
         elif option == 2:
-            print("hi")
+            avg_main()
             pass 
         elif option == 3:
             print("hi")
@@ -61,11 +62,17 @@ def avg_main():
     while True: 
         answer = input("1.find the averge 2. find the median")
         if answer == '1':
-            num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers ")
-            try 
-            number = [60,50,40,60,70] 
-            avg = sum(number)/len(number)
-            print(avg)
+            try:
+                num1, num2, num3, num4, num5, num6 = input("enter 6 numbers ")
+                number = [num1,num2,num3,num4,num5,num6] 
+                avg = sum(number)/len(number)
+                print(avg)
+            except: 
+                print("invalid")
+                avg_main()
+
+def exit 
+            
 
 
     
