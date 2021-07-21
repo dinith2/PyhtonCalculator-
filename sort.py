@@ -17,6 +17,7 @@ def menu():
             avg_main()
             pass 
         elif option == 3:
+            exit_main()
             print("hi")
             pass 
         else:
@@ -72,6 +73,7 @@ def avg_main():
                 avg_main()
         if answer == '2':
             try:
+                #normal code
                 n_num = [1, 2, 3, 4, 5]
                 n = len(n_num)
                 n_num.sort()
@@ -84,7 +86,20 @@ def avg_main():
                     median = n_num[n//2]
                     print("Median is: " + str(median))
 
-def exit 
+def exit_main()
+while True: 
+        Answer = input("are you sure you want to quit? yes or no")
+        if Answer == 'yes':
+            sys.exit()
+        elif Answer == 'no':
+            menu()
+            pass
+        else: 
+            print("invalid")
+            exit_main()
+            break 
+
+
             
 
 
