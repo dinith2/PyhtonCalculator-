@@ -17,7 +17,7 @@ def menu():
             avg_main()
             pass 
         elif option == 3:
-            exit_main()
+            #exit_main()
             print("hi")
             pass 
         else:
@@ -32,24 +32,24 @@ def sort_main():
             try:
                 num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
                 my_list = [num1, num2, num3, num4, num5, num6, num7]
-            except: 
-                print("invalid, only print numbers ")
-                sort_main()
                 #sort in decreasing order
                 my_list = sorted(my_list, reverse=True) 
                 print(my_list)
+            except: 
+                print("invalid")
             
                
         elif Answer == '2':
             try:
                 num1, num2, num3, num4, num5, num6, num7 = input("enter 7 numbers").split()
                 my_list=[num1, num2, num3, num4, num5, num6, num7]
-            except:
+            
                 print("invalid, only print numbers")
-                sort_main()
                 # sort in increasing order
                 my_list = sorted(my_list, reverse=False) 
                 print(my_list)
+            except:
+                print("invalid")
             
             pass
         else: 
@@ -65,7 +65,7 @@ def avg_main():
         if answer == '1':
             try:
                 num1, num2, num3, num4, num5, num6 = input("enter 6 numbers ")
-                number = [num1,num2,num3,num4,num5,num6] 
+                number = [num1, num2, num3, num4, num5, num6] 
                 avg = sum(number)/len(number)
                 print(avg)
             except: 
@@ -73,8 +73,9 @@ def avg_main():
                 avg_main()
         if answer == '2':
             try:
+                num1, num2, num3, num4, num5, num6 = input("enter 6 numbers")
                 #normal code
-                n_num = [1, 2, 3, 4, 5]
+                n_num = [num1, num2, num3, num4, num5, num6]
                 n = len(n_num)
                 n_num.sort()
   
@@ -85,28 +86,26 @@ def avg_main():
                 else:
                     median = n_num[n//2]
                     print("Median is: " + str(median))
-
-def exit_main()
-while True: 
-        Answer = input("are you sure you want to quit? yes or no")
-        if Answer == 'yes':
-            sys.exit()
-        elif Answer == 'no':
-            menu()
-            pass
-        else: 
-            print("invalid")
-            exit_main()
-            break 
-
-
-            
-
-
-    
+            except: 
+                menu()
 
 
 
+#def exit_main():
+       # while True: 
+        #Answer = input("are you sure you want to quit? yes or no")
+       # if Answer == 'yes':
+         #   sys.exit()
+       # elif Answer == 'no':
+        #    menu()
+          #  pass
+      #  else: 
+          #  print("invalid")
+          #  exit_main()
+           # break 
+
+
+        
 menu()
 
 
