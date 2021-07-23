@@ -17,9 +17,11 @@ def menu():
             avg_main()
             pass 
         elif option == 3:
-            #exit_main()
-            print("hi")
+            
+            print("finding median")
             pass 
+        elif option == 4:
+            #exit_main()
         else:
             print("invalid")
             menu()
@@ -89,6 +91,9 @@ def avg_main():
             except: 
                 menu()
 
+def median_main()
+    while True: input("")
+        if answer
 
 
 #def exit_main():
