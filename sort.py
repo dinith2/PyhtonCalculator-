@@ -1,4 +1,6 @@
 import sys
+import math 
+
 
 def menu():
     print("1.sort numbers ")
@@ -22,6 +24,7 @@ def menu():
             pass 
         elif option == 4:
             #exit_main()
+
         else:
             print("invalid")
             menu()
@@ -39,6 +42,7 @@ def sort_main():
                 print(my_list)
             except: 
                 print("invalid")
+                menu()
             
                
         elif Answer == '2':
@@ -93,7 +97,9 @@ def avg_main():
 
 def median_main()
     while True: input("")
-        if answer
+    try: 
+        
+    
 
 
 #def exit_main():
