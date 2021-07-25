@@ -2,6 +2,7 @@ import sys
 import math 
 
 
+
 def menu():
     print("1.sort numbers ")
     print("2.find the avg and median ")
@@ -67,7 +68,7 @@ def sort_main():
 
 def avg_main(): 
     while True: 
-        answer = input("1.find the averge 2. find the median")
+        answer = input("1.find the averge ")
         if answer == '1':
             try:
                 num1, num2, num3, num4, num5, num6 = input("enter 6 numbers ")
@@ -77,14 +78,8 @@ def avg_main():
             except: 
                 print("invalid")
                 avg_main()
-        if answer == '2':
-            try:
-                num1, num2, num3, num4, num5, num6 = input("enter 6 numbers")
-                #normal code
-                n_num = [num1, num2, num3, num4, num5, num6]
-                n = len(n_num)
-                n_num.sort()
-  
+        
+
                 if n % 2 == 0:
                     median1 = n_num[n//2]
                     median2 = n_num[n//2 - 1]
@@ -97,8 +92,23 @@ def avg_main():
 
 def median_main()
     while True: input("")
-    try: 
-        
+        if answer == '2':
+            try:
+                num1, num2, num3, num4, num5, num6 = input("enter 6 numbers")
+                #normal code
+                n_num = [num1, num2, num3, num4, num5, num6]
+                n = len(n_num)
+                n_num.sort()
+                 if n % 2 == 0:
+                    median1 = n_num[n//2]
+                    median2 = n_num[n//2 - 1]
+                    median = (median1 + median2)/2
+                else:
+                    median = n_num[n//2]
+                    print("Median is: " + str(median))
+            except: 
+                menu()
+
     
 
 
