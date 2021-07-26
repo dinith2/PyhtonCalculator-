@@ -26,7 +26,7 @@ def menu():
         elif option == 4:
             #exit_main()
 
-        else:
+        else: 
             print("invalid")
             menu()
 
@@ -61,7 +61,7 @@ def sort_main():
             pass
         else: 
             print("invalid")
-            sort_main()
+            menu()
             print("go back to menu")
 
             break 
@@ -77,7 +77,7 @@ def avg_main():
                 print(avg)
             except: 
                 print("invalid")
-                avg_main()
+                menu()
         
 
                 if n % 2 == 0:
