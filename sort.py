@@ -112,18 +112,18 @@ def median_main()
     
 
 
-#def exit_main():
-       # while True: 
-        #Answer = input("are you sure you want to quit? yes or no")
-       # if Answer == 'yes':
-         #   sys.exit()
-       # elif Answer == 'no':
-        #    menu()
-          #  pass
-      #  else: 
-          #  print("invalid")
-          #  exit_main()
-           # break 
+def exit_main():
+        while True: 
+                Answer = input("are you sure you want to quit? yes or no")
+            if Answer == 'yes':
+            sys.exit()
+            elif Answer == 'no':
+            menu()
+            pass
+             else: 
+            print("invalid")
+            exit_main()
+            break 
 
 
         
