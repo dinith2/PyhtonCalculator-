@@ -20,7 +20,7 @@ def menu():
             avg_main()
             pass 
         elif option == 3:
-            
+            median_main()
             print("finding median")
             pass 
         elif option == 4:
