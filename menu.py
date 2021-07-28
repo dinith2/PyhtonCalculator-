@@ -137,7 +137,7 @@ def  hvh_main():
             i += 1
             if win_check(board, marker):
                 print("You won !")
-                game_score =+ 1 
+                game_score += 10
                 print(game_score)
                 menu()
                 break
