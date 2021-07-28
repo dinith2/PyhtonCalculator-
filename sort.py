@@ -77,7 +77,7 @@ def avg_main():
                 print(avg)
             except: 
                 print("invalid")
-                menu()
+                break
         
 
                 if n % 2 == 0:
