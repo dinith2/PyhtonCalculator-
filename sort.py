@@ -113,7 +113,12 @@ def median_main()
 
 
 def exit_main():
-        while True: 
+        while True: input("are you sure knowing ")
+            try: 
+                
+               
+               
+               
                 Answer = input("are you sure you want to quit? yes or no")
             if Answer == 'yes':
             sys.exit()
