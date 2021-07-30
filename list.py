@@ -20,3 +20,6 @@ print(List[2])
 List = [['Geeks', 'For'] , ['Geeks']]
 print("\nMulti-Dimensional List: ")
 print(List)
+
+list =[a, 1, 3]
+print(list)
