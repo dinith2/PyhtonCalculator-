@@ -11,6 +11,7 @@ while question != 'n':
         question = input('Would you like to roll the dice [y/n]?\n')
     else:
         print('Invalid response. Please type "y" or "n".')
-        question = input('Would you like to roll the dice [y/n]?\n')        
+        question = input('Would you like to roll the dice [y/n]?\n')
+        #Pqr        
 
 print('end')
