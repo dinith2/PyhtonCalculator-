@@ -1,16 +1,26 @@
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QApplication,QMainWindow
-import sys 
+import sys
+from PyQt5 import QtCore, QtWidgets
+from PyQt5.QtWidgets import QMainWindow, QLabel, QGridLayout, QWidget
+from PyQt5.QtWidgets import QPushButton
+from PyQt5.QtCore import QSize    
 
-def demo():
-    app=QApplication(sys.argv)
-    win=QMainWindow()
-    win.setGeometry(300,300,300,300)
-    win.setWindowTitle("demo ui")
-    label=QtWidgets.QLabel(win)
-    label.setText("roll dice")
-    label.move(100,100)
+class MainWindow(QMainWindow):
+    def __init__(self):
+        QMainWindow.__init__(self)
 
-    win.show()
-    sys.exit(app.exec_())
-demo()
+        self.setMinimumSize(QSize(300, 200))    
+        self.setWindowTitle("PyQt button example - pythonprogramminglanguage.com") 
+
+        pybutton = QPushButton('Click me', self)
+        pybutton.clicked.connect(self.clickMethod)
+        pybutton.resize(100,32)
+        pybutton.move(50, 50)        
+
+    def clickMethod(self):
+        print('Clicked Pyqt button.')
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    mainWin = MainWindow()
+    mainWin.show()
+    sys.exit( app.exec_() )
