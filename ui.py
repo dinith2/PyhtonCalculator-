@@ -26,7 +26,6 @@ class MainWindow(QMainWindow):
             if question == 'y':
                 die1 = random.randint(1, 6)
                 die2 = random.randint(1, 6)
-                die3 = random.randint(1, 6)
                 print(die1, die2)
                 question = input('Would you like to roll the dice [y/n]?\n')
             else:
