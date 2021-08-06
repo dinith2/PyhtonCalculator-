@@ -18,9 +18,10 @@ class MainWindow(QMainWindow):
         pybutton.move(50, 50)        
 
     def clickMethod(self):
-        QMainWindow.__init__(self)
-        self.setMinimumSize(QSize(300, 200))
         
+        self.setMinimumSize(QSize(300, 200))
+        pybutton = QPushButton('yes')
+        pybutton =QPushButton('no')
         question = input('Would you like to roll the dice [y/n]?\n')
         while question != 'n':
             if question == 'y':
