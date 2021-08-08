@@ -23,6 +23,7 @@ class MainWindow(QMainWindow):
         pybutton = QPushButton('yes')
         pybutton =QPushButton('no')
         set.setwindowTitle
+        pybutton.resize(100,30)
         question = input('Would you like to roll the dice [y/n]?\n')
         while question != 'n':
             if question == 'y':
