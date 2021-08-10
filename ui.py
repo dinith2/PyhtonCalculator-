@@ -3,7 +3,7 @@ import random
 
 
 root = tkinter.Tk()
-root.geometry('400x400')
+root.geometry('600x600')
 root.title('Roll Dice')
 
 
