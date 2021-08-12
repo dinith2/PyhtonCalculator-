@@ -8,7 +8,7 @@ class LoadingGif(object):
   
     def mainUI(self, FrontWindow):
         FrontWindow.setObjectName("FTwindow")
-        FrontWindow.resize(320, 300)
+        FrontWindow.resize(620, 400)
         self.centralwidget = QtWidgets.QWidget(FrontWindow)
         self.centralwidget.setObjectName("main-widget")
   
