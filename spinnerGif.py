@@ -13,7 +13,7 @@ class LoadingGif(object):
         self.centralwidget.setObjectName("main-widget")
   
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(25, 25, 200, 200))
+        self.label.setGeometry(QtCore.QRect(35, 35, 200, 200))
         self.label.setMinimumSize(QtCore.QSize(250, 250))
         self.label.setMaximumSize(QtCore.QSize(250, 250))
         self.label.setObjectName("lb1")
