@@ -6,7 +6,7 @@ import math
 def menu():
     print("1.sort numbers ")
     print("2.find the avg and median ")
-    print("3.exit")
+    print("3.exit1")
     
 
     option = int(input("enter your option"))
