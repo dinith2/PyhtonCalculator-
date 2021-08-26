@@ -24,7 +24,7 @@ class Clock(QMainWindow):
         self.setWindowTitle('Clock')
   
         
-        self.setGeometry(200, 200, 300, 300)
+        self.setGeometry(100, 200, 300, 300)
   
         
         self.setStyleSheet("background : black;")
