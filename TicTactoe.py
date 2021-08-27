@@ -83,7 +83,7 @@ def replay():
 if __name__ == "__main__":
     print('Welcome to Tic Tac Toe!')
     i = 1
-    # Choose your side
+  
     players=player_input()
     # Empty board init
     board = ['#'] * 10
