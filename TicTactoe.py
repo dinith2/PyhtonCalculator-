@@ -85,7 +85,7 @@ if __name__ == "__main__":
     i = 1
   
     players=player_input()
-    # Empty board init
+
     board = ['#'] * 10
     while True:
         # Set the game up here
