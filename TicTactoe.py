@@ -88,7 +88,7 @@ if __name__ == "__main__":
 
     board = ['#'] * 10
     while True:
-        # Set the game up here
+        
         game_on=full_board_check(board)
         while not game_on:
             # Player to choose where to put the mark
