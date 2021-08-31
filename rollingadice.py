@@ -7,11 +7,12 @@ while question != 'n':
         die1 = random.randint(1, 6)
         die2 = random.randint(1, 6)
         die3 = random.randint(1, 6)
-        print(die1, die2)
+        die4 = random.randint(1,6)
+        print(die1, die2, die3, die4)
         question = input('Would you like to roll the dice [y/n]?\n')
     else:
         print('Invalid response. Please type "y" or "n".')
         question = input('Would you like to roll the dice [y/n]?\n')
-        #Pqr        
+       
 
 print('end')
