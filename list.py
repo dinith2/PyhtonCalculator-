@@ -1,4 +1,4 @@
-# Creating a List
+
 List = []
 print("Blank List: ")
 print(List)
