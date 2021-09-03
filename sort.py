@@ -24,7 +24,7 @@ def menu():
             print("finding median")
             pass 
         elif option == 4:
-            #exit_main()
+   
         else: 
             print("invalid")
             menu()
