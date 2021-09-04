@@ -15,7 +15,7 @@ def menu():
         print("select option")
         if option == 1:
            sort_main()
-            # Choose your side
+            
         elif option == 2:
             avg_main()
             pass 
