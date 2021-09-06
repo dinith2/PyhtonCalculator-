@@ -8,6 +8,7 @@ while question != 'n':
         die2 = random.randint(1, 6)
         die3 = random.randint(1, 6)
         die4 = random.randint(1,6)
+        
         print(die1, die2, die3, die4)
         question = input('Would you like to roll the dice [y/n]?\n')
     else:
