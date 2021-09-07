@@ -14,7 +14,7 @@ print("\nList Items: ")
 print(List[0]) 
 print(List[2])
   
-# Creating a Multi-Dimensional List
+
 # (By Nesting a list inside a List)
 List = [['Geeks', 'For'] , ['Geeks']]
 print("\nMulti-Dimensional List: ")
