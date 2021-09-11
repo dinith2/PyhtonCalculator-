@@ -16,7 +16,7 @@ def menu():
             print('Welcome to Tic Tac Toe!')
             i = 1  
             hvh_main()
-            # Choose your side
+            
         elif option == 2:
             hvc_main()
             pass 
