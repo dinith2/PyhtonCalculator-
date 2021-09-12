@@ -91,16 +91,14 @@ if __name__ == "__main__":
         
         game_on=full_board_check(board)
         while not game_on:
-            # Player to choose where to put the mark
+            
             position = player_choice(board)
-            # Who's playin ?
+          
             if i % 2 == 0:
                 marker = players[1]
             else:
                 marker = players[0]
-            # Play !
             place_marker(board, marker, int(position))
-            # Check the board
             display_board(board)
             i += 1
             if win_check(board, marker):
@@ -110,12 +108,10 @@ if __name__ == "__main__":
         if not replay():
             break
         else:
+            
             i = 1
-            # Choose your side
             players=player_input()
-            # Empty board init
             board = ['#'] * 10
 
 
-            #computervsman
         

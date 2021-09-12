@@ -119,21 +119,21 @@ def  hvh_main():
     
     board = ['#'] * 10
     while True:
-        # Set the game up here
+       
         game_on=full_board_check(board)
         while not game_on:
-            # Player to choose where to put the mark
+            
             position = player_choice(board)
-            # Who's playin 
+           
             if i % 2 == 0:
                 
                 marker = players[1]
             else:
                 
                 marker = players[0]
-            # Play !
+          
             place_marker(board, marker, int(position))
-            # Check the board
+           
             display_board(board)
             i += 1
             if win_check(board, marker):
