@@ -14,7 +14,7 @@ class Window(QMainWindow):
         self.setWindowTitle("Python Stop watch")
   
         
-        self.setGeometry(100, 100, 400, 500)
+        self.setGeometry(100, 100, 400, 400)
   
         
         self.UiComponents()
