@@ -1,6 +1,6 @@
 import random
 
-question = input('Would you like to roll the dice [y/n]?\n')
+question = input('Would you like to roll the dice [y/n]?')
 
 while question != 'n':
     if question == 'y':
