@@ -2,7 +2,7 @@ import sys
 import math 
 
 
-
+#sys
 def menu():
     print("1.sort numbers ")
     print("2.find the avg and median ")
