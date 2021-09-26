@@ -1,7 +1,7 @@
 import sys
 import math 
 
-#sys
+
 
 def menu():
     print("1.sort numbers ")
