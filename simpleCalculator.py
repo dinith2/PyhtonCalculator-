@@ -1,6 +1,6 @@
 import numpy
 import math 
-
+#list
 def menu():
     
     print("select operation")
