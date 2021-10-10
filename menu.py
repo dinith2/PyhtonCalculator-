@@ -1,4 +1,5 @@
-import  sys 
+import  sys
+#list
 human_score =  0
 computer_score = 0 
 def menu():
