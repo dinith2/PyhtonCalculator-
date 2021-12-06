@@ -1,6 +1,6 @@
 import numpy 
 import math 
-import sys
+
 
 def menu():
     
