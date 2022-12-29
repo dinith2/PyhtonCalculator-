@@ -9,8 +9,9 @@ def mainmenu():
 
     
         if choice == 1:
-            print ('Starting Scan\n')
-            binCon()
+            
+            num = int(input('> Enter your number '))
+            binCon(num)
 
         elif choice == 2:
             print ('Starting Ping\n')
@@ -21,8 +22,14 @@ def mainmenu():
             mainmenu(6)
 
 
-def binCon():
-    print("")
+def binCon(num):
+    bin_num = bin(num)
+    print(bin_num)
+
+def decCon(num):
+    int(num, 2)
+    return num
+    
     
 
 mainmenu()
