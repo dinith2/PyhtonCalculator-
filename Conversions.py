@@ -10,7 +10,7 @@ def mainmenu():
     
         if choice == 1:
             print ('Starting Scan\n')
-            func()
+            binCon()
 
         elif choice == 2:
             print ('Starting Ping\n')
@@ -22,6 +22,7 @@ def mainmenu():
 
 
 def binCon():
+    print("")
     
 
 mainmenu()
