@@ -11,6 +11,12 @@ def subbin(num1,num2):
     result = bin(intSum)[2:]  
     print(result)
 
+def multibin(num1,num2):
+    intSum = int(num1, 2) * int(num2, 2) 
+    result = bin(intSum)[2:]  
+    print(result)
+
+
 while(True):
     print ("1.to add")
     print ('2. to subract')
