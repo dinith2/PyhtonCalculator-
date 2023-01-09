@@ -21,8 +21,8 @@ res=requests.get(f'https://www.google.com/search?q={city}&oq={city}’
     print(weather+"°C")
 
 print("enter the city name")
-city=input()
+//city=input()
 
-city=city+" weather"
+//city=city+" weather"
 
 weather(city)
