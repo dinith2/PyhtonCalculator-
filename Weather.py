@@ -22,7 +22,7 @@ res=requests.get(f'https://www.google.com/search?q={city}&oq={city}’
 
 print("enter the city name")
 //city=input()
-
-//city=city+" weather"
+printf("")
+city=city+" weather"
 
 weather(city)
