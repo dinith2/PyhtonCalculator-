@@ -1,5 +1,6 @@
 import random
 
+
 symbols = ["Cow", "Rabbit", "Duck", "Crab", "Pig", "Turkey", "seven"]
 
 payouts = {
@@ -24,10 +25,11 @@ def get_payout(symbols):
     return 0
 
 def play():
-    while True:
-        input("Press enter to spin the slot machine...")
-        symbols = spin()
-        payout = get_payout(symbols)
-        print(f"{' '.join(symbols)} - Payout: {payout}\n")
+        coin=0
+        if(coin<5):
+            input("Press enter to spin the slot machine...")
+            symbols = spin()
+            payout = get_payout(symbols)
+            print(f"{' '.join(symbols)} - Payout: {payout}\n")
 
 play()
