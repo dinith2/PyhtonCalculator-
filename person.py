@@ -8,19 +8,17 @@ draw = ImageDraw.Draw(image)
 head_radius = 80
 body_height = 150
 leg_height = 150
-
-# Draw the head
+b
 head_center = (image_width // 2, head_radius)
 draw.ellipse((head_center[0] - head_radius, head_center[1] - head_radius,
               head_center[0] + head_radius, head_center[1] + head_radius),
              fill="lightblue", outline="black")
 
-# Draw the body
 body_top = head_center[1] + head_radius
 draw.rectangle((head_center[0] - 10, body_top, head_center[0] + 10, body_top + body_height),
                fill="lightblue", outline="black")
 
-# Draw the legs
+# Draw  legs
 leg_bottom = body_top + body_height
 draw.rectangle((head_center[0] - 30, leg_bottom, head_center[0] - 10, leg_bottom + leg_height),
                fill="lightblue", outline="black")
