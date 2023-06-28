@@ -12,11 +12,11 @@ def show_notes():
 
 def add_note():
     clear_screen()
-    print("----- Add Note -----")
+    print("----- Add Note ----")
     note = input("Enter your note: ")
     with open("notes.txt", "a") as file:
         file.write(note + "\n")
-    print("Note added successfully")
+    print("Note added successfully!")
 
 def delete_notes():
     clear_screen()

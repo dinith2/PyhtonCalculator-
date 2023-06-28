@@ -9,14 +9,14 @@ print("\nList of numbers: ")
 print(List)
   
 
-List = ["Geeks", "For", "Geeks"]
+List = ["list1", "list2", "list3"]
 print("\nList Items: ")
 print(List[0]) 
 print(List[2])
   
 
 
-List = [['Geeks', 'For'] , ['Geeks']]
+List = [['list1', 'list2'] , ['list3']]
 print("\nMulti-Dimensional List: ")
 print(List)
 
