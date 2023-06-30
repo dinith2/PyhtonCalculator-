@@ -12,7 +12,7 @@ def magic_8_ball():
         "Outlook good.",
         "Yes.",
         "Signs point to yes.",
-        "Reply hazy, try again.",
+        "Very likely.",
         "Ask again later.",
         "Better not tell you now.",
         "Cannot predict now.",
