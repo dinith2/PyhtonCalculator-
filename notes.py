@@ -1,6 +1,15 @@
 import os
 
 def retrive_note():
+    clear_screen()
+    print("----- retrive Notes -----")
+    confirmation = input("Are you sure you want to retive all notes? (y/n): ")
+    if confirmation.lower() == "y":
+        with open("notes.txt", "w") as file:
+            show_note()
+        
+    else:
+        print("Deletion canceled.")
     
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
