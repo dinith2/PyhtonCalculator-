@@ -1,12 +1,5 @@
 import os
 
-def noteMax()
-    print("reach max notes, must delete")
-    delete_notes()
-
-        
-    
-    
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -36,6 +29,45 @@ def delete_notes():
     else:
         print("Deletion canceled.")
 
+def retrieve_note():
+    clear_screen()
+    print("----- Retrieve Note -----")
+    backup_file = "notes_backup.txt"
+    original_file = "notes.txt"
+
+    if not os.path.isfile(backup_file):
+        print("No notes have been deleted.")
+        input("\nPress Enter to continue...")
+        return
+
+    print("Deleted Notes:")
+    with open(backup_file, "r") as backup:
+        deleted_notes = backup.readlines()
+        for i, note in enumerate(deleted_notes, start=1):
+            print(f"{i}. {note.strip()}")
+
+    try:
+        line_number = int(input("Enter the line number of the note to retrieve: "))
+        if line_number < 1 or line_number > len(deleted_notes):
+            print("Invalid line number.")
+            input("\nPress Enter to continue...")
+            return
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        input("\nPress Enter to continue...")
+        return
+
+    note_to_retrieve = deleted_notes[line_number - 1]
+    with open(original_file, "a") as original:
+        original.write(note_to_retrieve)
+
+    with open(backup_file, "w") as backup:
+        remaining_notes = deleted_notes[:line_number - 1] + deleted_notes[line_number:]
+        backup.writelines(remaining_notes)
+
+    print("Note retrieved and added back to the notes.")
+    input("\nPress Enter to continue...")
+
 def main_menu():
     while True:
         clear_screen()
@@ -43,9 +75,10 @@ def main_menu():
         print("1. Show Notes")
         print("2. Add Note")
         print("3. Delete Notes")
-        print("4. Exit")
+        print("4. Retrieve Note")
+        print("5. Exit")
 
-        choice = input("Enter your choice (1-4): ")
+        choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
             show_notes()
@@ -57,11 +90,13 @@ def main_menu():
             delete_notes()
             input("\nPress Enter to continue...")
         elif choice == "4":
+            retrieve_note()
+            input("\nPress Enter to continue...")
+        elif choice == "5":
             clear_screen()
             print("Exiting the Notes App. Goodbye!")
             break
         else:
             input("Invalid choice! Press Enter to try again...")
 
-# Run the Notes App
 main_menu()
