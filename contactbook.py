@@ -9,6 +9,8 @@ def load_contacts():
     
     return contacts
 
+def block_contact():
+
 def save_contacts(contacts):
     with open('contacts.json', 'w') as file:
         json.dump(contacts, file, indent=4)
