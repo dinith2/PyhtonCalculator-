@@ -10,9 +10,12 @@ def cross_product(a, b):
 
     return c
 
-# Test the function with example vectors
-vector_a = [5, 4, 2]
-vector_b = [4, 5, 6]
+
+vector_a = []
+vector_b = []
+for(i=0; i>10 i++) {
+    
+}
 
 orthogonal_vector = cross_product(vector_a, vector_b)
 print("The orthogonal vector is:", orthogonal_vector)
