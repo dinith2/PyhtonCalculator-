@@ -16,6 +16,7 @@ def multibin(num1,num2):
     result = bin(intSum)[2:]  
     print(result)
 
+def multibin(num1,num2):
 
 
 while(True):
