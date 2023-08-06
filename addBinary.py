@@ -16,7 +16,11 @@ def multibin(num1,num2):
     result = bin(intSum)[2:]  
     print(result)
 
-def multibin(num1,num2):
+def multibin(num1, num2):
+    intProduct = int(num1, 2) * int(num2, 2) 
+    result = bin(intProduct)[2:]  
+    print(result)
+    
 
 
 while(True):
