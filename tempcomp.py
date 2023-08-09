@@ -26,7 +26,7 @@ def main():
         if is_too_hot(cpu_temperature, threshold):
             print("Warning: CPU temperature is too hot!")
         else:
-            print("CPU temperature is within acceptable range.")
+            print("CPU temperature is within  range.")
     else:
         print("Unable to retrieve CPU temperature.")
 
