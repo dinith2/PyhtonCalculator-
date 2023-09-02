@@ -61,6 +61,7 @@ def determine_winner(player_choice, computer_choice):
     else:
         return "lose"
 
+def vsplayer():
 def main():
     clock = pygame.time.Clock()
     running = True
