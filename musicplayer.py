@@ -1,13 +1,24 @@
 import pygame
+import random
 
 pygame.init()
 
 window = pygame.display.set_mode((400, 200))
 
-# Load your music file
-pygame.mixer.music.load("your_music_file.mp3")
+music_files = [
+    "music_file_1.mp3",
+    "music_file_2.mp3",
+    "music_file_3.mp3",
+    "music_file_4.mp3",
+    "music_file_5.mp3",
+]
 
-# Start playing the music
+random.shuffle(music_files)
+
+current_track = 0
+
+pygame.mixer.music.load(music_files[current_track])
+
 pygame.mixer.music.play()
 
 running = True
@@ -16,6 +27,12 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-pygame.mixer.music.stop()
+    if not pygame.mixer.music.get_busy():
+        current_track += 1
+        if current_track >= len(music_files):
+            current_track = 0  
+        pygame.mixer.music.load(music_files[current_track])
+        pygame.mixer.music.play()
 
 pygame.quit()
+ 
