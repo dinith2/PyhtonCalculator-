@@ -13,6 +13,7 @@ music_files = [
     "music_file_5.mp3",
 ]
 
+
 random.shuffle(music_files)
 
 current_track = 0
