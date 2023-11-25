@@ -1,5 +1,4 @@
 #using hashmaps 
 pass 
-pygame.sprite.switch_layer(
-    , layer2_nr)
-\
+map 
+pygame.sprite.switch_layer(layer1_nr, layer2_nr)
