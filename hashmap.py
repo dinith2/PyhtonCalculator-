@@ -39,3 +39,6 @@ class HashMap:
                 self.map[key_hash].pop(i)
                 return True
         return False
+    
+    def newmap(self,key):
+        key_harsh
